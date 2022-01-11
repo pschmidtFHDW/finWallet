@@ -36,7 +36,7 @@ Thumbs.db
 UserInterfaceState.xcuserstate
 
 # Others
-.idea/workspace.xml
-.angular/cache
+.idea/
+.angular/cache/
 
 # End of https://www.toptal.com/developers/gitignore/api/ionic3
