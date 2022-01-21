@@ -1,4 +1,4 @@
-<ion-content class="ion-padding">
+<ion-content class="ion-padding no-scroll">
   <h1>Create Account,</h1>
   <h3>Sign up to get started!</h3>
 
@@ -8,12 +8,17 @@
     <app-input label="Password" type="password"></app-input>
 
     <app-button label="Register"></app-button>
-    <app-icon-button icon="logo-google" label="Register with Google"></app-icon-button>
+
+    <ng-container class="registerOptions">
+      <p>Alternatively:</p>
+      <app-icon-button icon="logo-google" label="Register with Google"></app-icon-button>
+      <app-icon-button icon="logo-apple" label="Register with Apple"></app-icon-button>
+    </ng-container>
+
   </form>
 
   <p class="footer-text">
     I'm already a member,
-    <a routerLink="#">Sign In</a>
+    <a routerLink="../login">Sign In</a>
   </p>
 </ion-content>
-

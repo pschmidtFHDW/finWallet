@@ -1,4 +1,4 @@
-<ion-content class="ion-padding">
+<ion-content class="ion-padding no-scroll">
   <h1>Welcome,</h1>
   <h3>Sign in to continue!</h3>
 
@@ -8,12 +8,18 @@
     <a routerLink="#" class="forgot-password-link">Forgot Password?</a>
 
     <app-button label="Login"></app-button>
-    <app-icon-button icon="logo-google" label="Login with Google"></app-icon-button>
+
+    <ng-container class="loginOptions">
+      <p>Alternatively:</p>
+      <app-icon-button icon="logo-google" label="Sign in with Google"></app-icon-button>
+      <app-icon-button icon="logo-apple" label="Sign in with Apple"></app-icon-button>
+    </ng-container>
+
   </form>
 
   <p class="footer-text">
     I'm a new user,
-    <a routerLink="">Sign Up</a>
+    <a routerLink="../register">Sign Up</a>
   </p>
 </ion-content>
 
